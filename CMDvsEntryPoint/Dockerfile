@@ -1,3 +1,4 @@
 FROM centos:centos7
-ENTRYPOINT ["yum", "-y", "install"]
-CMD ["git"]
+CMD ["yum", "-y", "install", "git"]
+ENTRYPOINT ["yum", "-y", "install", "httpd"]
+ENTRYPOINT ["echo", "Hello World!"]
